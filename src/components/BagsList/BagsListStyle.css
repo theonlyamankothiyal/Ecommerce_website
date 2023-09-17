@@ -1,0 +1,153 @@
+/* Container for Bags */
+.bags-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.search-ba {
+  width: 100%;
+}
+
+/* Category Container Styles */
+.category-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.category-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Bags List Styles */
+.bags-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* Adjust the alignment as needed */
+  gap: 20px;
+  /* Gap between bags */
+}
+
+/* Bag Item Styles */
+.bag-item {
+  flex-basis: calc(25% - 20px);
+  /* 4 bags in a row with 20px gap */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+.bag-item:hover {
+  transform: translateY(-5px);
+}
+
+.bag-item img {
+  max-width: 100%;
+  /* height: auto; */
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.bag-item h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.bag-item p {
+  margin: 5px 0;
+  color: #333;
+}
+
+/* Price and Company Styles */
+.bag-item p:first-child {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Type and Specifications Styles */
+.bag-item p:last-child {
+  font-style: italic;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  /* Background color for the search bar */
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  /* Adjust as needed */
+
+  input[type="text"] {
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    /* Transparent background for the input */
+    color: #fff;
+    /* Text color */
+    font-size: 16px;
+    /* Font size */
+    padding: 5px;
+    outline: none;
+    /* Remove the input outline */
+  }
+
+  input[type="text"]::placeholder {
+    color: #ccc;
+    /* Placeholder text color */
+  }
+
+  /* Style the search icon */
+  svg {
+    color: #fff;
+    /* Icon color */
+    margin-right: 10px;
+    /* Spacing between icon and input */
+  }
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .search-bar {
+    /* Adjust the styles for smaller screens here */
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 800;
+  }
+
+  input[type="text"] {
+    font-size: 14px;
+  }
+}
+
+
+
+@media (max-width: 767px) {
+  .bag-item {
+    flex-basis: calc(50% - 20px);
+    /* 2 bags in a row with 20px gap */
+  }
+}
+
+/* For screens smaller than 480px, display 1 product per row */
+@media (max-width: 479px) {
+  .bag-item {
+    flex-basis: 100%;
+    /* 1 bag per row */
+  }
+}

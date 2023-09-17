@@ -1,0 +1,45 @@
+  
+  /* Container Styles */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  /* Bags List Styles */
+  .bags-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .bag-item {
+    flex: 0 0 calc(33.333% - 1rem);
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .bag-item:hover {
+    transform: scale(1.03);
+  }
+  
+  .bag-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .bag-item h3 {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+  }
+  
+  .bag-item p {
+    margin: 0.25rem 0;
+    font-size: 0.875rem;
+  }
+  

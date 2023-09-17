@@ -1,0 +1,51 @@
+/* CSS for the profile container */
+.profile-container {
+    background-color:black;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .profile-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #cab9b9;
+  }
+  
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-info img {
+    width: 200px;
+    border-radius: 100%;
+    margin: 10px 0;
+  }
+  
+  .profile-info p {
+    font-size: 16px;
+    margin: 5px 0;
+    
+  }
+  
+  /* Style for the user information */
+  .profile-info strong {
+    font-weight: bold;
+    color: #cab9b9;
+  }
+  
+  /* Add more CSS as needed for additional user information or sections */
+  @media screen and (max-width: 768px) {
+    .profile-container {
+      padding: 10px;
+      margin: 10px;
+    }
+  
+    .profile-info img {
+      width: 150px;
+    }
+  }  
